@@ -1,0 +1,554 @@
+/** Aldana Cabrera José Alfredo/
+/* Estilos Generales */
+
+/* Establece el fondo de la página con un gradiente de colores */
+body {
+    /*CSS gradients*/
+    background: rgb(46, 80, 225); /* Color de fondo inicial */
+    background: linear-gradient(180deg, rgba(46, 80, 225, 1) 0%, rgba(12, 32, 77, 1) 60%, rgba(7, 25, 57, 1) 100%);
+    /* Fondo de gradiente que se extiende desde el primer color al segundo y al tercer color */
+    background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+}
+
+/* Estilos para el fondo de un elemento con clase "fondo" */
+.fondo {
+    background-image: url("imagenes/fondo.jfif"); /* Establece una imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    position: relative; /* Establece la posición del elemento en relación con su contenedor */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+}
+
+/* Estilos para el logotipo */
+.logo {
+    max-width: 150px;
+    min-width: 100px;
+    margin: auto;
+}
+
+/* Efecto de escala al pasar el cursor sobre ciertos elementos */
+.logo:hover, .burger:hover, .icon:hover, .insignia:hover {
+    transform: scale(1.4);
+}
+
+/* Estilos para la lista de navegación */
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el ícono del menú hamburguesa */
+.burger {
+    font-size: 70px;
+    color: #caf0f8;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto en pantallas más grandes */
+}
+
+/* Clase para controlar la visibilidad del menú hamburguesa */
+.burger-toggle {
+    display: none;
+}
+
+/* Estilos para un objetivo (posiblemente un encabezado) */
+.goal {
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilos generales para el contenido principal */
+main {
+    text-align: justify;
+    font-weight: bold; /* Texto en negritas */
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Color del texto */
+    text-transform: initial; /* Restaura la capitalización normal del texto */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilos para diferentes tamaños de títulos */
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(218, 255, 6);
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color: aqua;
+}
+h3 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(158, 250, 219);
+}
+h4 {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(126, 243, 102);
+}
+/* Estilos para una línea horizontal */
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Estilos para imágenes */
+.foto {
+    display: block;
+    margin: auto;
+    width: 300px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
+}
+
+.school {
+    display: block;
+    margin: auto;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project {
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
+}
+
+/* Efecto de escala al pasar el cursor sobre un proyecto */
+.project:hover {
+    transform: scale(0.8);
+}
+
+/* Estilos para elementos de cursos */
+.curso1, .curso2, .curso3 {
+    display: block;
+    margin: auto;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
+}
+
+/* Estilos para un contenedor de insignias */
+.insignias {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Estilos para la sección de hobbies */
+.hobbies {
+    margin: auto;
+}
+
+/* Estilos para el contenedor de elementos de portafolio */
+.hobbie-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Estilos para cada elemento de portafolio */
+.hobbie-item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos para la imagen en elementos de portafolio */
+.img-hobbie1 {
+    transition: all 0.5s;
+    width: 250px;
+}
+
+.img-hobbie2 {
+    transition: all 0.5s;
+    width: 450px;
+}
+
+/* Estilos para el texto en elementos de portafolio */
+.hobbie-text1 {
+    position: absolute;
+    text-align: center;
+    padding-right: 50px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+}
+
+/* Estilos para un pequeño texto en elementos de portafolio */
+.hob1 {
+    font-size: small;
+    text-align: justify;
+}
+
+/* Estilos para el texto en elementos de portafolio */
+.hobbie-text2 {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    padding: 50px 95px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+}
+
+/* Animaciones al pasar el cursor sobre elementos de portafolio */
+.hobbie-item:hover .hobbie-text1 {
+    transform: translateY(0%);
+}
+.hobbie-item:hover .hobbie-text2 {
+    transform: translateY(0%);
+}
+.hobbie-item:hover .img-hobbie1 {
+    transform: scale(1.5);
+}
+.hobbie-item:hover .img-hobbie2 {
+    transform: scale(3);
+}
+
+/* Estilos para una sección de escritura */
+.write {
+    text-align: center;
+}
+
+/* Estilos para un campo de formulario */
+fieldset {
+    width: 700px;
+    display: block;
+    margin: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    color: white;
+    font-size: small;
+    position: static;
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+/* Estilos para enlaces a redes sociales */
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+/*************************************************************************************************************************************************************************/
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    /* Estilos para el fondo de la página con un gradiente de colores */
+body {
+    /*CSS gradients*/
+    background: rgb(46, 80, 225); /* Color de fondo inicial */
+    background: linear-gradient(180deg, rgba(46, 80, 225, 1) 0%, rgba(12, 32, 77, 1) 60%, rgba(7, 25, 57, 1) 100%);
+    /* Fondo de gradiente que se extiende desde el primer color al segundo y al tercer color */
+    background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+}
+
+/* Estilos para el fondo de un elemento con clase "fondo" */
+.fondo {
+    background-image: url("imagenes/fondo.jfif"); /* Establece una imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    position: relative; /* Establece la posición del elemento en relación con su contenedor */
+}
+
+/* Estilos para el menú de navegación en forma de lista vertical */
+.nav-list {
+    display: none; /* Oculta la navegación regular */
+    flex-direction: column; /* Lista vertical */
+    position: absolute; /* Posiciona de forma absoluta */
+    right: 0; /* Alineado a la derecha */
+    width: 40%; /* Ancho del menú */
+    z-index: 1; /* Asegura que el menú aparezca por encima de otros contenidos */
+    background: rgb(6, 15, 98); /* Fondo del menú */
+    background: linear-gradient(180deg, rgba(6, 15, 98, 1) 0%, rgba(12, 5, 74, 1) 60%, rgba(14, 9, 56, 1) 100%);
+    padding: 60px 0px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Estilos para mostrar el menú de navegación cuando se activa */
+.nav-list.active {
+    display: flex; /* Muestra la navegación como un flexbox al hacer clic en el icono de hamburguesa */
+}
+
+/* Estilos para el ícono de hamburguesa */
+.burger {
+    display: block; /* Muestra el icono de hamburguesa */
+}
+
+/* Mostrar la navegación cuando se marca el interruptor de hamburguesa */
+.burger-toggle:checked ~ .nav-list {
+    display: flex; /* Muestra la navegación cuando el interruptor de hamburguesa está marcado */
+}
+
+/* Estilos para enlaces de texto */
+.text-link {
+    color: #caf0f8;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Estilos al pasar el cursor sobre enlaces de texto */
+.text-link:hover {
+    color: yellow;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 15px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 125, 253, 1) 100%);
+}
+
+/* Estilos al hacer clic en enlaces de texto */
+.text-link:active {
+    background: rgb(46, 80, 225);
+    background: linear-gradient(180deg, rgba(46, 80, 225, 1) 0%, rgba(7, 25, 57, 1) 100%);
+    color: rgb(238, 103, 14);
+}
+
+/* Estilos para elementos con clase "caja1" */
+.caja1 {
+    display: block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+/* Estilos para diferentes secciones */
+.about-me, .skills, .education, .courses, .proyectos {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    width: auto;
+}
+
+/* Estilos para el contenedor de insignias */
+.insignias {
+    gap: 30px;
+}
+
+/* Estilos para insignias individuales */
+.insignia {
+    max-width: 60px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Estilos para el contenedor de elementos de portafolio */
+.hobbie-container {
+    display: block;
+    justify-content: center;
+}
+
+/* Estilos para imágenes en elementos de portafolio */
+.img-hobbie1 {
+    transition: all 0.5s;
+    width: 200px;
+    margin-left: 80px;
+    margin-right: 10px;
+}
+
+.img-hobbie2 {
+    transition: all 0.5s;
+    width: 350px;
+    margin-left: 15px;
+}
+
+/* Estilos para texto en elementos de portafolio */
+.hobbie-text1 {
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+}
+
+.hobbie-text2 {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+}
+
+/* Estilos para el campo de formulario */
+fieldset {
+    width: 0px; /* Ancho inicial del campo de formulario */
+}
+
+/* Estilos para el espacio de mensaje */
+.espacio-message {
+    width: 300px;
+}
+
+/* Estilos para elementos con clase "project" */
+.project {
+    max-width: 300px; /* Establece el ancho máximo del elemento */
+}
+
+
+}
+  
+  /*************************************************************************************************************************************************************************/
+  /* Estilos para pantallas medianas (tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Estilos para el menú de navegación en forma de lista vertical */
+.nav-list {
+    display: none; /* Oculta la navegación regular */
+    flex-direction: column; /* Dispone los elementos en columna */
+    position: absolute; /* Posiciona de forma absoluta */
+    right: 0; /* Alineado a la derecha */
+    width: 40%; /* Ancho del menú */
+    z-index: 1; /* Asegura que el menú aparezca por encima de otros contenidos */
+    background: rgb(6, 15, 98); /* Fondo del menú */
+    background: linear-gradient(180deg, rgba(6, 15, 98, 1) 0%, rgba(12, 5, 74, 1) 60%, rgba(14, 9, 56, 1) 100%); /* Gradiente de colores de fondo */
+    padding: 50px 0px; /* Espaciado interno vertical */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Estilos para mostrar el menú de navegación cuando está activo */
+.nav-list.active {
+    display: flex; /* Muestra la navegación como un flexbox al hacer clic en el icono de hamburguesa */
+}
+
+/* Estilos para el ícono de hamburguesa */
+.burger {
+    display: block; /* Muestra el icono de hamburguesa */
+}
+
+/* Mostrar la navegación cuando el interruptor de hamburguesa está marcado */
+.burger-toggle:checked ~ .nav-list {
+    display: flex; /* Muestra la navegación cuando el interruptor de hamburguesa está marcado */
+}
+
+/* Estilos para enlaces de texto */
+.text-link {
+    color: #caf0f8;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Estilos al pasar el cursor sobre enlaces de texto */
+.text-link:hover {
+    color: yellow;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 15px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 125, 253, 1) 100%); /* Gradiente de colores de fondo al pasar el cursor */
+}
+
+/* Estilos al hacer clic en enlaces de texto */
+.text-link:active {
+    background: rgb(46, 80, 225);
+    background: linear-gradient(180deg, rgba(46, 80, 225, 1) 0%, rgba(7, 25, 57, 1) 100%); /* Gradiente de colores de fondo al hacer clic */
+    color: rgb(238, 103, 14);
+}
+
+/* Estilos para elementos con clase "caja1" */
+.caja1 {
+    display: block; /* Convierte el elemento en un bloque */
+    margin-top: 90px; /* Espaciado superior */
+    width: auto; /* Ancho automático */
+    margin-right: 250px; /* Espaciado derecho */
+}
+
+/* Estilos para diferentes secciones */
+.about-me, .skills, .education, .courses, .proyectos {
+    padding-left: 150px; /* Espaciado izquierdo */
+    padding-right: 150px; /* Espaciado derecho */
+    padding-top: 20px; /* Espaciado superior */
+    width: auto; /* Ancho automático */
+}
+
+/* Estilos para las insignias */
+.insignia {
+    max-width: 120px; /* Tamaño máximo para las imágenes */
+    height: auto; /* Ajustar la altura automáticamente */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+
+  }
+/*************************************************************************************************************************************************************************/
+  /* Estilos para pantallas grandes (escritorio) */
+  @media (min-width: 1024px) {
+
+    /* Estilos para enlaces de texto */
+.text-link {
+    color: #caf0f8; /* Color del texto */
+    font-size: 25px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin decoración de texto */
+    padding: 85px; /* Espaciado interno */
+}
+
+/* Estilos al pasar el cursor sobre enlaces de texto */
+.text-link:hover {
+    color: yellow; /* Cambio de color al pasar el cursor */
+    padding: 85px; /* Espaciado interno */
+    font-size: 25px; /* Tamaño de fuente */
+    border-radius: 15px; /* Bordes redondeados */
+    background: rgb(34, 193, 195); /* Fondo con gradiente de colores */
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 125, 253, 1) 100%);
+}
+
+/* Estilos al hacer clic en enlaces de texto */
+.text-link:active {
+    background: rgb(46, 80, 225); /* Fondo con gradiente de colores al hacer clic */
+    background: linear-gradient(180deg, rgba(46, 80, 225, 1) 0%, rgba(7, 25, 57, 1) 100%);
+    color: rgb(238, 103, 14); /* Color del texto al hacer clic */
+}
+
+/* Estilos para elementos con clase "caja1" */
+.caja1 {
+    display: block; /* Convierte el elemento en un bloque */
+    margin-top: 160px; /* Espaciado superior */
+    width: auto; /* Ancho automático */
+    margin-right: 850px; /* Espaciado derecho */
+}
+
+/* Estilos para diferentes secciones */
+.about-me, .skills, .education, .courses, .proyectos {
+    padding-left: 400px; /* Espaciado izquierdo */
+    padding-right: 400px; /* Espaciado derecho */
+    width: auto; /* Ancho automático */
+    padding-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para las insignias */
+.insignia {
+    max-width: 200px; /* Tamaño máximo para las imágenes */
+    height: auto; /* Ajustar la altura automáticamente */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+
+  }
+  
